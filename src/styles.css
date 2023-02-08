@@ -3,6 +3,7 @@
 }
 
 body {
+  background: linear-gradient(90deg, rgba(105,228,173,1) 0%, rgba(95,228,255,1) 100%);
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
@@ -62,13 +63,13 @@ body {
   float: left;
   font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 42px;
+  height: 42px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 42px;
 }
 
 .board-row:after {
@@ -83,8 +84,34 @@ body {
 .game {
   display: flex;
   flex-direction: row;
+  margin: auto;
+  height: 50%;
+  width: 50%;
+  padding: 10px;
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 680px) {
+  .square {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .square {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
 }
